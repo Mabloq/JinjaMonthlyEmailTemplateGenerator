@@ -78,34 +78,17 @@
             <td valign="top"><img src="images/NewOnTheWeb_345m.jpg" width="345" height="57" alt="" /> <strong>Data Sheet
               </strong><span style="color:red"><strong>New</strong></span><br>
 
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/datasheet/value-par-lamps">Value PAR Lamps</a><br>
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/datasheet/value-br-lamps">Value BR Lamps</a><br>
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/datasheet/value-a-lamps">Value A Lamps</a><br>
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/datasheet/highmax-led-lamps">HighMAX Lamps</a><br>
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/datasheet/pole-mounting-accessories">Pole Mounting Accessories</a><br>
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/datasheet/guardmax-entry-wallpack">GuardMAX Entry Wall Pack</a><br>
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/datasheet/mpulse-bollard">MPulse Bollard</a><br>
+                 {% for d in datasheets %}
+              • {{d}} <br>
+                 {% endfor %}
 
 
-              </a>
+
               <br>
               <strong>Product Pages</strong> <span style="color:red"><strong>New</strong></span> <br>
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/products/highmax-led-lamps">HighMAX Lamps</a><br>
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/products/marine-grade">Marine Grade</a><br>
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/products/guardmax-entry-wall-pack">GuardMAX Entry Wall Pack</a><br>
-              • <a style="text-decoration: none; color: #009639; font-weight: bold"
-                href="https://www.maxlite.com/products/mpulse-bollard">MPulse Bollard</a>
-
+                {% for p in product_page %}
+                 • {{p}} <br>
+                {% endfor %}
               <br>
             </td>
           </tr>
